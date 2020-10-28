@@ -31,6 +31,7 @@ A consumer will reach their fitness goals more quickly when they track their wor
 - stack
 
 ## Deployed Project
+
 You can view the deployed project [here](https://homework-seventeen-workout.herokuapp.com/)
 
 ## Questions
