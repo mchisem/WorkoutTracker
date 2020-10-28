@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mchisem/WorkoutTracker/issues"
   },
-  "homepage": "https://github.com/mchisem/WorkoutTracker#readme"
+  "homepage": "https://github.com/mchisem/WorkoutTracker#readme",
+  "dependencies": {
+    "mongojs": "^3.1.0"
+  }
 }
