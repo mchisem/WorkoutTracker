@@ -1,11 +1,14 @@
-const compression = require('compression')
-const express = require('express')
-
-// compressed compression function
-var app=express();function shouldCompress(s,e){return!s.headers["x-no-compression"]&&compression.filter(s,e)}app.use(compression({filter:shouldCompress}));
-
+const compression = require('compression');
+const express = require('express');
 
 const PORT = process.env.PORT || 8090;
+
+// Creating express app and configuring middleware needed for authentication
+const app = express();
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static("public"));
 
 app.listen(PORT, () => {
     console.log(
@@ -14,3 +17,7 @@ app.listen(PORT, () => {
       PORT
     );
   });
+
+// compressed compression function
+app;function shouldCompress(s,e){return!s.headers["x-no-compression"]&&compression.filter(s,e)}app.use(compression({filter:shouldCompress}));
+

@@ -1,6 +1,6 @@
 # WorkoutTracker
 
-For this assignment, I created workout tracker using Mongo database with a Mongoose schema and handled routes with Express.
+For this assignment, I created a workout tracker using Mongo database with a Mongoose schema and handled routes with Express.
 
 ## Table of Contents
 
