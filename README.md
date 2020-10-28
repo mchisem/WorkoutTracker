@@ -5,10 +5,10 @@ For this assignment, I created workout tracker using Mongo database with a Mongo
 ## Table of Contents
 
 - [User Story](#user)
-- [Business Context](#business)
+- [Business Context](#business context)
 - [Installation](#installation)
 - [Dependencies](#dependencies)
-- [Deployed Project](#deployed)
+- [Deployed Project](#deployed project)
 - [Questions](#questions)
 
 ## User Story
@@ -24,6 +24,10 @@ A consumer will reach their fitness goals more quickly when they track their wor
 `npm install`
 
 ## Dependencies
+
+- compression
+- mongojs
+- stack
 
 ## Deployed Project
 
