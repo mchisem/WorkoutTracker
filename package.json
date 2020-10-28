@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mchisem/WorkoutTracker#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "mongojs": "^3.1.0"
   }
 }
