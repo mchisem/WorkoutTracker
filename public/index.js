@@ -13,16 +13,6 @@ async function init() {
 
 const compression = require('compression')
 const express = require('express')
- 
-var app = express()
-app.use(compression({ filter: shouldCompress }))
- 
-function shouldCompress (req, res) {
-  if (req.headers['x-no-compression']) {
-    // don't compress responses with this request header
-    return false
-  }
- 
-  // fallback to standard filter function
-  return compression.filter(req, res)
-}
+
+// compressed compression function
+var app=express();function shouldCompress(s,e){return!s.headers["x-no-compression"]&&compression.filter(s,e)}app.use(compression({filter:shouldCompress}));
